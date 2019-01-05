@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A060C6D21E023A100AFF186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A060C6C21E023A000AFF186 /* GoogleService-Info.plist */; };
+		8A060C7021E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A060C6F21E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift */; };
+		8A060C7221E0EB9F00AFF186 /* VenueListVC+DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A060C7121E0EB9F00AFF186 /* VenueListVC+DeepLink.swift */; };
+		8A479B9B21DE895C00CDF180 /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A479B9A21DE895C00CDF180 /* FSOAuth.m */; };
+		8A479BDE21DE90DD00CDF180 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BD221DE90DC00CDF180 /* Venue.swift */; };
+		8A479BE021DE90DD00CDF180 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BD421DE90DC00CDF180 /* Location.swift */; };
+		8A479BE621DE9E6F00CDF180 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BE521DE9E6F00CDF180 /* MapVC.swift */; };
+		8A479BE821DEA59B00CDF180 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BE721DEA59B00CDF180 /* VenueAnnotation.swift */; };
+		8A479BEA21DEC20F00CDF180 /* MapVC+Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BE921DEC20F00CDF180 /* MapVC+Delegation.swift */; };
+		8A479BEC21DEC4AE00CDF180 /* MapVC+CollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BEB21DEC4AE00CDF180 /* MapVC+CollectionDelegate.swift */; };
+		8A479BEE21DEC4DF00CDF180 /* VenueCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BED21DEC4DF00CDF180 /* VenueCollectionCell.swift */; };
+		8A479BF221DF671300CDF180 /* VenueListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BF121DF671300CDF180 /* VenueListVC.swift */; };
+		8A479BF621DF6A7E00CDF180 /* VenueTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BF521DF6A7E00CDF180 /* VenueTableCell.swift */; };
+		8A479BF821DF6AF400CDF180 /* VenueList+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BF721DF6AF400CDF180 /* VenueList+TableViewDelegate.swift */; };
+		8AF6FC0A21B9555200A1D939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC0921B9555200A1D939 /* AppDelegate.swift */; };
+		8AF6FC0F21B9555300A1D939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6FC0D21B9555300A1D939 /* Main.storyboard */; };
+		8AF6FC1121B9555700A1D939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6FC1021B9555700A1D939 /* Assets.xcassets */; };
+		8AF6FC1421B9555700A1D939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6FC1221B9555700A1D939 /* LaunchScreen.storyboard */; };
+		8AF6FC1D21B95ECA00A1D939 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC1C21B95ECA00A1D939 /* AppConfigurations.swift */; };
+		8AF6FC2021B9658000A1D939 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC1F21B9658000A1D939 /* View+Extensions.swift */; };
+		8AF6FC2221B967D500A1D939 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2121B967D500A1D939 /* Date+Extensions.swift */; };
+		8AF6FC2421B9682200A1D939 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2321B9682200A1D939 /* Array+Extensions.swift */; };
+		8AF6FC2621B9685E00A1D939 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2521B9685E00A1D939 /* String+Extensions.swift */; };
+		8AF6FC2821B96B3C00A1D939 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2721B96B3C00A1D939 /* Data+Extensions.swift */; };
+		8AF6FC2A21B96E3400A1D939 /* JSON+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2921B96E3400A1D939 /* JSON+Extensions.swift */; };
+		8AF6FC2C21B96E6200A1D939 /* Enum+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2B21B96E6200A1D939 /* Enum+Extensions.swift */; };
+		8AF6FC2E21B96E8700A1D939 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2D21B96E8700A1D939 /* Dictionary+Extensions.swift */; };
+		8AF6FC3021B96EB300A1D939 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC2F21B96EB200A1D939 /* UINavigationController+Extensions.swift */; };
+		8AF6FC3221B96EDB00A1D939 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC3121B96EDB00A1D939 /* UIViewController+Extensions.swift */; };
+		8AF6FC3421B96F5500A1D939 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC3321B96F5500A1D939 /* UIApplication+Extensions.swift */; };
+		8AF6FC3621B96F6E00A1D939 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC3521B96F6E00A1D939 /* UIButton+Extensions.swift */; };
+		8AF6FC3821B96F8200A1D939 /* UIGestureRecognizer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC3721B96F8200A1D939 /* UIGestureRecognizer+Closure.swift */; };
+		8AF6FC3A21B96F9600A1D939 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC3921B96F9600A1D939 /* UIAlertController+Extensions.swift */; };
+		8AF6FC3E21B972F200A1D939 /* AppAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC3D21B972F200A1D939 /* AppAlertView.swift */; };
+		8AF6FC4821B9798700A1D939 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6FC4A21B9798700A1D939 /* Localizables.strings */; };
+		8AF6FC4E21B979D700A1D939 /* Strings+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC4D21B979D700A1D939 /* Strings+Additions.swift */; };
+		8AF6FC5121B979FF00A1D939 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC5021B979FF00A1D939 /* UIColor+Additions.swift */; };
+		8AF6FC5321B982A500A1D939 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC5221B982A400A1D939 /* Extensions.swift */; };
+		8AF6FC5621B9832700A1D939 /* UIStoryboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC5521B9832700A1D939 /* UIStoryboard+Additions.swift */; };
+		8AF6FC7421B986B700A1D939 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC7321B986B700A1D939 /* AppConstants.swift */; };
+		8AF6FC7621B986D400A1D939 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC7521B986D400A1D939 /* UserSettings.swift */; };
+		8AF6FC7A21B9875E00A1D939 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC7921B9875E00A1D939 /* APIConstants.swift */; };
+		8AF6FC7C21B9879400A1D939 /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC7B21B9879400A1D939 /* JSONable.swift */; };
+		8AF6FC7E21B987BD00A1D939 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC7D21B987BD00A1D939 /* AppError.swift */; };
+		8AF6FC8021B987E900A1D939 /* Siesta+swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC7F21B987E900A1D939 /* Siesta+swiftyJSON.swift */; };
+		8AF6FC8221B9880600A1D939 /* Resource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC8121B9880600A1D939 /* Resource+Extensions.swift */; };
+		8AF6FC8C21B98E2C00A1D939 /* AppAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC8B21B98E2C00A1D939 /* AppAPIService.swift */; };
+		8AF6FC8E21B9903200A1D939 /* VieDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6FC8D21B9903200A1D939 /* VieDataManager.swift */; };
+		FB02BB20E104679BA265CF35 /* Pods_Vie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E67F976F78C4F47F0B043 /* Pods_Vie.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		082E231E7059DD6F126F3275 /* Pods-Vie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vie.release.xcconfig"; path = "Target Support Files/Pods-Vie/Pods-Vie.release.xcconfig"; sourceTree = "<group>"; };
+		211E67F976F78C4F47F0B043 /* Pods_Vie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A060C6C21E023A000AFF186 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A060C6E21E0CC9800AFF186 /* Vie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vie.entitlements; sourceTree = "<group>"; };
+		8A060C6F21E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VieDataManager+DynamicLinks.swift"; sourceTree = "<group>"; };
+		8A060C7121E0EB9F00AFF186 /* VenueListVC+DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VenueListVC+DeepLink.swift"; sourceTree = "<group>"; };
+		8A479B9821DE895B00CDF180 /* Vie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vie-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A479B9921DE895B00CDF180 /* FSOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
+		8A479B9A21DE895C00CDF180 /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
+		8A479BD221DE90DC00CDF180 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		8A479BD421DE90DC00CDF180 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8A479BE521DE9E6F00CDF180 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		8A479BE721DEA59B00CDF180 /* VenueAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAnnotation.swift; sourceTree = "<group>"; };
+		8A479BE921DEC20F00CDF180 /* MapVC+Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+Delegation.swift"; sourceTree = "<group>"; };
+		8A479BEB21DEC4AE00CDF180 /* MapVC+CollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CollectionDelegate.swift"; sourceTree = "<group>"; };
+		8A479BED21DEC4DF00CDF180 /* VenueCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCollectionCell.swift; sourceTree = "<group>"; };
+		8A479BF121DF671300CDF180 /* VenueListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListVC.swift; sourceTree = "<group>"; };
+		8A479BF521DF6A7E00CDF180 /* VenueTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableCell.swift; sourceTree = "<group>"; };
+		8A479BF721DF6AF400CDF180 /* VenueList+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VenueList+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		8AF6FC0621B9555200A1D939 /* Vie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF6FC0921B9555200A1D939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AF6FC0E21B9555300A1D939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AF6FC1021B9555700A1D939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AF6FC1321B9555700A1D939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AF6FC1521B9555700A1D939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF6FC1C21B95ECA00A1D939 /* AppConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		8AF6FC1F21B9658000A1D939 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2121B967D500A1D939 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2321B9682200A1D939 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2521B9685E00A1D939 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2721B96B3C00A1D939 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2921B96E3400A1D939 /* JSON+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2B21B96E6200A1D939 /* Enum+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2D21B96E8700A1D939 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC2F21B96EB200A1D939 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC3121B96EDB00A1D939 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC3321B96F5500A1D939 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC3521B96F6E00A1D939 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC3721B96F8200A1D939 /* UIGestureRecognizer+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Closure.swift"; sourceTree = "<group>"; };
+		8AF6FC3921B96F9600A1D939 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC3D21B972F200A1D939 /* AppAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAlertView.swift; sourceTree = "<group>"; };
+		8AF6FC4421B9794400A1D939 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		8AF6FC4521B9794500A1D939 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8AF6FC4921B9798700A1D939 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizables.strings; sourceTree = "<group>"; };
+		8AF6FC4B21B9798C00A1D939 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizables.strings; sourceTree = "<group>"; };
+		8AF6FC4D21B979D700A1D939 /* Strings+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Additions.swift"; sourceTree = "<group>"; };
+		8AF6FC5021B979FF00A1D939 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		8AF6FC5221B982A400A1D939 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8AF6FC5521B9832700A1D939 /* UIStoryboard+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Additions.swift"; sourceTree = "<group>"; };
+		8AF6FC7321B986B700A1D939 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8AF6FC7521B986D400A1D939 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		8AF6FC7921B9875E00A1D939 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		8AF6FC7B21B9879400A1D939 /* JSONable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONable.swift; sourceTree = "<group>"; };
+		8AF6FC7D21B987BD00A1D939 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		8AF6FC7F21B987E900A1D939 /* Siesta+swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Siesta+swiftyJSON.swift"; sourceTree = "<group>"; };
+		8AF6FC8121B9880600A1D939 /* Resource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Resource+Extensions.swift"; sourceTree = "<group>"; };
+		8AF6FC8B21B98E2C00A1D939 /* AppAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAPIService.swift; sourceTree = "<group>"; };
+		8AF6FC8D21B9903200A1D939 /* VieDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VieDataManager.swift; sourceTree = "<group>"; };
+		B3E52DB8E28BFC7D9EB9D3DF /* Pods-Vie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vie.debug.xcconfig"; path = "Target Support Files/Pods-Vie/Pods-Vie.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AF6FC0321B9555200A1D939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB02BB20E104679BA265CF35 /* Pods_Vie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6861A4253147F5BE30E8E080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3E52DB8E28BFC7D9EB9D3DF /* Pods-Vie.debug.xcconfig */,
+				082E231E7059DD6F126F3275 /* Pods-Vie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A479B9721DE894000CDF180 /* FSO */ = {
+			isa = PBXGroup;
+			children = (
+				8A479B9921DE895B00CDF180 /* FSOAuth.h */,
+				8A479B9A21DE895C00CDF180 /* FSOAuth.m */,
+				8A479B9821DE895B00CDF180 /* Vie-Bridging-Header.h */,
+			);
+			path = FSO;
+			sourceTree = "<group>";
+		};
+		8A479B9C21DE8EB900CDF180 /* Venue Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BD421DE90DC00CDF180 /* Location.swift */,
+				8A479BD221DE90DC00CDF180 /* Venue.swift */,
+			);
+			path = "Venue Model";
+			sourceTree = "<group>";
+		};
+		8A479BEF21DF668000CDF180 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BE521DE9E6F00CDF180 /* MapVC.swift */,
+				8A479BE921DEC20F00CDF180 /* MapVC+Delegation.swift */,
+				8A479BEB21DEC4AE00CDF180 /* MapVC+CollectionDelegate.swift */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		8A479BF021DF66F900CDF180 /* Venue List */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BF121DF671300CDF180 /* VenueListVC.swift */,
+				8A479BF721DF6AF400CDF180 /* VenueList+TableViewDelegate.swift */,
+				8A060C7121E0EB9F00AFF186 /* VenueListVC+DeepLink.swift */,
+			);
+			path = "Venue List";
+			sourceTree = "<group>";
+		};
+		8A479BF321DF6A5900CDF180 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BED21DEC4DF00CDF180 /* VenueCollectionCell.swift */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		8A479BF421DF6A6200CDF180 /* Venue List  */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BF521DF6A7E00CDF180 /* VenueTableCell.swift */,
+			);
+			path = "Venue List ";
+			sourceTree = "<group>";
+		};
+		8AF6FBFD21B9555200A1D939 = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC0821B9555200A1D939 /* Vie */,
+				8AF6FC0721B9555200A1D939 /* Products */,
+				6861A4253147F5BE30E8E080 /* Pods */,
+				8DDC16DBD7619857AC64CEB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AF6FC0721B9555200A1D939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC0621B9555200A1D939 /* Vie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AF6FC0821B9555200A1D939 /* Vie */ = {
+			isa = PBXGroup;
+			children = (
+				8A060C6E21E0CC9800AFF186 /* Vie.entitlements */,
+				8AF6FC5D21B9846A00A1D939 /* Integrations */,
+				8AF6FC5C21B9845B00A1D939 /* Models */,
+				8AF6FC5B21B9845000A1D939 /* Controllers */,
+				8AF6FC5721B983EF00A1D939 /* Layers */,
+				8AF6FC3B21B972C100A1D939 /* UI */,
+				8AF6FC1B21B95E8900A1D939 /* Utils */,
+				8AF6FC0921B9555200A1D939 /* AppDelegate.swift */,
+				8AF6FC1021B9555700A1D939 /* Assets.xcassets */,
+				8AF6FC1221B9555700A1D939 /* LaunchScreen.storyboard */,
+				8AF6FC1521B9555700A1D939 /* Info.plist */,
+				8AF6FC4A21B9798700A1D939 /* Localizables.strings */,
+				8A060C6C21E023A000AFF186 /* GoogleService-Info.plist */,
+			);
+			path = Vie;
+			sourceTree = "<group>";
+		};
+		8AF6FC1B21B95E8900A1D939 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC5421B982FD00A1D939 /* Storyboards */,
+				8AF6FC4F21B979ED00A1D939 /* Colors */,
+				8AF6FC4C21B979C200A1D939 /* Strings */,
+				8AF6FC1E21B960F900A1D939 /* Extensions */,
+				8AF6FC1C21B95ECA00A1D939 /* AppConfigurations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8AF6FC1E21B960F900A1D939 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC5221B982A400A1D939 /* Extensions.swift */,
+				8AF6FC3921B96F9600A1D939 /* UIAlertController+Extensions.swift */,
+				8AF6FC3721B96F8200A1D939 /* UIGestureRecognizer+Closure.swift */,
+				8AF6FC3521B96F6E00A1D939 /* UIButton+Extensions.swift */,
+				8AF6FC3321B96F5500A1D939 /* UIApplication+Extensions.swift */,
+				8AF6FC3121B96EDB00A1D939 /* UIViewController+Extensions.swift */,
+				8AF6FC2F21B96EB200A1D939 /* UINavigationController+Extensions.swift */,
+				8AF6FC2D21B96E8700A1D939 /* Dictionary+Extensions.swift */,
+				8AF6FC2521B9685E00A1D939 /* String+Extensions.swift */,
+				8AF6FC2B21B96E6200A1D939 /* Enum+Extensions.swift */,
+				8AF6FC2921B96E3400A1D939 /* JSON+Extensions.swift */,
+				8AF6FC2321B9682200A1D939 /* Array+Extensions.swift */,
+				8AF6FC1F21B9658000A1D939 /* View+Extensions.swift */,
+				8AF6FC2121B967D500A1D939 /* Date+Extensions.swift */,
+				8AF6FC2721B96B3C00A1D939 /* Data+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8AF6FC3B21B972C100A1D939 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC0D21B9555300A1D939 /* Main.storyboard */,
+				8AF6FC8A21B98DC300A1D939 /* Custom Cells */,
+				8AF6FC8521B98CE300A1D939 /* Appearance */,
+				8AF6FC3C21B972C600A1D939 /* Custom UI */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8AF6FC3C21B972C600A1D939 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC3D21B972F200A1D939 /* AppAlertView.swift */,
+				8A479BE721DEA59B00CDF180 /* VenueAnnotation.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		8AF6FC4C21B979C200A1D939 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC4D21B979D700A1D939 /* Strings+Additions.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		8AF6FC4F21B979ED00A1D939 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC5021B979FF00A1D939 /* UIColor+Additions.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		8AF6FC5421B982FD00A1D939 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC5521B9832700A1D939 /* UIStoryboard+Additions.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8AF6FC5721B983EF00A1D939 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC5921B9840600A1D939 /* Data Layer */,
+				8AF6FC5821B983F800A1D939 /* Network Layer */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		8AF6FC5821B983F800A1D939 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC8B21B98E2C00A1D939 /* AppAPIService.swift */,
+				8AF6FC8121B9880600A1D939 /* Resource+Extensions.swift */,
+				8AF6FC7B21B9879400A1D939 /* JSONable.swift */,
+				8AF6FC7F21B987E900A1D939 /* Siesta+swiftyJSON.swift */,
+				8AF6FC7D21B987BD00A1D939 /* AppError.swift */,
+				8AF6FC7921B9875E00A1D939 /* APIConstants.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		8AF6FC5921B9840600A1D939 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6FC8D21B9903200A1D939 /* VieDataManager.swift */,
+				8A060C6F21E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift */,
+				8AF6FC7521B986D400A1D939 /* UserSettings.swift */,
+				8AF6FC7321B986B700A1D939 /* AppConstants.swift */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		8AF6FC5B21B9845000A1D939 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BF021DF66F900CDF180 /* Venue List */,
+				8A479BEF21DF668000CDF180 /* MapVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8AF6FC5C21B9845B00A1D939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A479B9C21DE8EB900CDF180 /* Venue Model */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8AF6FC5D21B9846A00A1D939 /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				8A479B9721DE894000CDF180 /* FSO */,
+			);
+			path = Integrations;
+			sourceTree = "<group>";
+		};
+		8AF6FC8521B98CE300A1D939 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		8AF6FC8A21B98DC300A1D939 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8A479BF421DF6A6200CDF180 /* Venue List  */,
+				8A479BF321DF6A5900CDF180 /* MapVC */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		8DDC16DBD7619857AC64CEB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211E67F976F78C4F47F0B043 /* Pods_Vie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AF6FC0521B9555200A1D939 /* Vie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF6FC1821B9555700A1D939 /* Build configuration list for PBXNativeTarget "Vie" */;
+			buildPhases = (
+				324CF424DDEDEB162B2D3943 /* [CP] Check Pods Manifest.lock */,
+				8AF6FC0221B9555200A1D939 /* Sources */,
+				8AF6FC0321B9555200A1D939 /* Frameworks */,
+				8AF6FC0421B9555200A1D939 /* Resources */,
+				2AAA6557460F6C306FE05A94 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vie;
+			productName = IOSBaseStructure;
+			productReference = 8AF6FC0621B9555200A1D939 /* Vie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AF6FBFE21B9555200A1D939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nermeen Mohamed";
+				TargetAttributes = {
+					8AF6FC0521B9555200A1D939 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8AF6FC0121B9555200A1D939 /* Build configuration list for PBXProject "Vie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 8AF6FBFD21B9555200A1D939;
+			productRefGroup = 8AF6FC0721B9555200A1D939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF6FC0521B9555200A1D939 /* Vie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AF6FC0421B9555200A1D939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF6FC1421B9555700A1D939 /* LaunchScreen.storyboard in Resources */,
+				8AF6FC4821B9798700A1D939 /* Localizables.strings in Resources */,
+				8A060C6D21E023A100AFF186 /* GoogleService-Info.plist in Resources */,
+				8AF6FC1121B9555700A1D939 /* Assets.xcassets in Resources */,
+				8AF6FC0F21B9555300A1D939 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AAA6557460F6C306FE05A94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vie/Pods-Vie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MOLH/MOLH.framework",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOLH.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vie/Pods-Vie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		324CF424DDEDEB162B2D3943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AF6FC0221B9555200A1D939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A060C7221E0EB9F00AFF186 /* VenueListVC+DeepLink.swift in Sources */,
+				8AF6FC3A21B96F9600A1D939 /* UIAlertController+Extensions.swift in Sources */,
+				8AF6FC5121B979FF00A1D939 /* UIColor+Additions.swift in Sources */,
+				8AF6FC3421B96F5500A1D939 /* UIApplication+Extensions.swift in Sources */,
+				8A060C7021E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift in Sources */,
+				8AF6FC2621B9685E00A1D939 /* String+Extensions.swift in Sources */,
+				8AF6FC3221B96EDB00A1D939 /* UIViewController+Extensions.swift in Sources */,
+				8AF6FC2421B9682200A1D939 /* Array+Extensions.swift in Sources */,
+				8AF6FC2A21B96E3400A1D939 /* JSON+Extensions.swift in Sources */,
+				8AF6FC2C21B96E6200A1D939 /* Enum+Extensions.swift in Sources */,
+				8AF6FC1D21B95ECA00A1D939 /* AppConfigurations.swift in Sources */,
+				8A479BDE21DE90DD00CDF180 /* Venue.swift in Sources */,
+				8AF6FC8221B9880600A1D939 /* Resource+Extensions.swift in Sources */,
+				8A479BE821DEA59B00CDF180 /* VenueAnnotation.swift in Sources */,
+				8A479BE621DE9E6F00CDF180 /* MapVC.swift in Sources */,
+				8AF6FC2021B9658000A1D939 /* View+Extensions.swift in Sources */,
+				8A479BEC21DEC4AE00CDF180 /* MapVC+CollectionDelegate.swift in Sources */,
+				8AF6FC3021B96EB300A1D939 /* UINavigationController+Extensions.swift in Sources */,
+				8AF6FC2821B96B3C00A1D939 /* Data+Extensions.swift in Sources */,
+				8AF6FC3821B96F8200A1D939 /* UIGestureRecognizer+Closure.swift in Sources */,
+				8AF6FC4E21B979D700A1D939 /* Strings+Additions.swift in Sources */,
+				8AF6FC2221B967D500A1D939 /* Date+Extensions.swift in Sources */,
+				8AF6FC8021B987E900A1D939 /* Siesta+swiftyJSON.swift in Sources */,
+				8A479BE021DE90DD00CDF180 /* Location.swift in Sources */,
+				8AF6FC5621B9832700A1D939 /* UIStoryboard+Additions.swift in Sources */,
+				8AF6FC7A21B9875E00A1D939 /* APIConstants.swift in Sources */,
+				8AF6FC7421B986B700A1D939 /* AppConstants.swift in Sources */,
+				8AF6FC0A21B9555200A1D939 /* AppDelegate.swift in Sources */,
+				8A479BEE21DEC4DF00CDF180 /* VenueCollectionCell.swift in Sources */,
+				8AF6FC3E21B972F200A1D939 /* AppAlertView.swift in Sources */,
+				8AF6FC8E21B9903200A1D939 /* VieDataManager.swift in Sources */,
+				8AF6FC7E21B987BD00A1D939 /* AppError.swift in Sources */,
+				8A479BEA21DEC20F00CDF180 /* MapVC+Delegation.swift in Sources */,
+				8AF6FC5321B982A500A1D939 /* Extensions.swift in Sources */,
+				8AF6FC3621B96F6E00A1D939 /* UIButton+Extensions.swift in Sources */,
+				8A479BF821DF6AF400CDF180 /* VenueList+TableViewDelegate.swift in Sources */,
+				8AF6FC2E21B96E8700A1D939 /* Dictionary+Extensions.swift in Sources */,
+				8AF6FC8C21B98E2C00A1D939 /* AppAPIService.swift in Sources */,
+				8A479BF221DF671300CDF180 /* VenueListVC.swift in Sources */,
+				8AF6FC7621B986D400A1D939 /* UserSettings.swift in Sources */,
+				8AF6FC7C21B9879400A1D939 /* JSONable.swift in Sources */,
+				8A479B9B21DE895C00CDF180 /* FSOAuth.m in Sources */,
+				8A479BF621DF6A7E00CDF180 /* VenueTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AF6FC0D21B9555300A1D939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF6FC0E21B9555300A1D939 /* Base */,
+				8AF6FC4421B9794400A1D939 /* ar */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AF6FC1221B9555700A1D939 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF6FC1321B9555700A1D939 /* Base */,
+				8AF6FC4521B9794500A1D939 /* ar */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8AF6FC4A21B9798700A1D939 /* Localizables.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF6FC4921B9798700A1D939 /* en */,
+				8AF6FC4B21B9798C00A1D939 /* ar */,
+			);
+			name = Localizables.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AF6FC1621B9555700A1D939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AF6FC1721B9555700A1D939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AF6FC1921B9555700A1D939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E52DB8E28BFC7D9EB9D3DF /* Pods-Vie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Vie/Vie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WEGU2VH8N;
+				INFOPLIST_FILE = "$(SRCROOT)/Vie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nermeen.Vie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vie/Integrations/FSO/Vie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AF6FC1A21B9555700A1D939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082E231E7059DD6F126F3275 /* Pods-Vie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Vie/Vie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WEGU2VH8N;
+				INFOPLIST_FILE = "$(SRCROOT)/Vie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nermeen.Vie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vie/Integrations/FSO/Vie-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AF6FC0121B9555200A1D939 /* Build configuration list for PBXProject "Vie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF6FC1621B9555700A1D939 /* Debug */,
+				8AF6FC1721B9555700A1D939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF6FC1821B9555700A1D939 /* Build configuration list for PBXNativeTarget "Vie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF6FC1921B9555700A1D939 /* Debug */,
+				8AF6FC1A21B9555700A1D939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AF6FBFE21B9555200A1D939 /* Project object */;
+}

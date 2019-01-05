@@ -1,0 +1,13 @@
+/* 
+  Localizables.strings
+  Vie
+
+  Created by Nerneen Mohamed on 12/6/18.
+  Copyright © 2018 Nermeen Mohamed. All rights reserved.
+*/
+"Arabic" = "اللغه العربيه";
+"English" = "اللغه الانجليزيه";
+"Women" = "امراءه";
+"Men" = "رجل";
+"error_in_connection" ="حدث خطأ فى الإتصال";
+"sorry_title" = "عذراً";
