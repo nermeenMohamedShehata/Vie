@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+            <point key="canvasLocation" x="980" y="28"/>
         </scene>
         <!--Venue ListVC-->
         <scene sceneID="fL2-0y-WsC">
@@ -280,6 +280,37 @@
             </objects>
             <point key="canvasLocation" x="2311" y="28"/>
         </scene>
+        <!--Home ContainerVC-->
+        <scene sceneID="1d5-jK-PwA">
+            <objects>
+                <viewController storyboardIdentifier="HomeContainerVC" id="JW5-l6-TOJ" customClass="HomeContainerVC" customModule="Vie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehB-tH-oxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc5-CW-YkQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="mBj-3e-a5F"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="5h8-ET-NgZ" kind="embed" id="1wv-lB-EbB"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xc5-CW-YkQ" firstAttribute="trailing" secondItem="qFG-CB-cB7" secondAttribute="trailing" id="GYd-5a-UrL"/>
+                            <constraint firstItem="xc5-CW-YkQ" firstAttribute="leading" secondItem="qFG-CB-cB7" secondAttribute="leading" id="HrZ-Mm-g9j"/>
+                            <constraint firstItem="xc5-CW-YkQ" firstAttribute="top" secondItem="ehB-tH-oxd" secondAttribute="top" id="Q1I-w9-xZR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qFG-CB-cB7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ArT-d4-zgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2998" y="27"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tdm-cJ-NeF">
             <objects>
@@ -316,9 +347,44 @@
             </objects>
             <point key="canvasLocation" x="1640.8" y="28.335832083958024"/>
         </scene>
+        <!--Home ContainerVC-->
+        <scene sceneID="NP6-OL-WVM">
+            <objects>
+                <viewController id="5h8-ET-NgZ" customClass="HomeContainerVC" customModule="Vie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7yS-oz-iNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWD-xh-7JG">
+                                <rect key="frame" x="299" y="18.5" width="68" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="Xff-sv-SDS"/>
+                                    <constraint firstAttribute="height" constant="47" id="prm-rg-nNV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="listIcon"/>
+                                <connections>
+                                    <action selector="didTapChangeDisplayMode:" destination="5h8-ET-NgZ" eventType="touchUpInside" id="GOn-Ev-1Y8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dWD-xh-7JG" firstAttribute="trailing" secondItem="7yS-oz-iNE" secondAttribute="trailingMargin" constant="8" id="8nt-gj-LZf"/>
+                            <constraint firstItem="dWD-xh-7JG" firstAttribute="centerY" secondItem="7yS-oz-iNE" secondAttribute="centerY" id="IoY-eV-niC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="didTapChangeDisplayMode" destination="IoY-eV-niC" id="PsU-t0-l7P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1u-sd-VJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3806" y="26"/>
+        </scene>
     </scenes>
     <resources>
         <image name="defaultVenueImage" width="768" height="768"/>
+        <image name="listIcon" width="16.5" height="16.5"/>
         <image name="sample-photo" width="320" height="320"/>
     </resources>
 </document>

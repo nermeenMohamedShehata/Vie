@@ -10,6 +10,7 @@
 		8A060C6D21E023A100AFF186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A060C6C21E023A000AFF186 /* GoogleService-Info.plist */; };
 		8A060C7021E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A060C6F21E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift */; };
 		8A060C7221E0EB9F00AFF186 /* VenueListVC+DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A060C7121E0EB9F00AFF186 /* VenueListVC+DeepLink.swift */; };
+		8A060C7521E14E1600AFF186 /* HomeContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A060C7421E14E1600AFF186 /* HomeContainerVC.swift */; };
 		8A479B9B21DE895C00CDF180 /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A479B9A21DE895C00CDF180 /* FSOAuth.m */; };
 		8A479BDE21DE90DD00CDF180 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BD221DE90DC00CDF180 /* Venue.swift */; };
 		8A479BE021DE90DD00CDF180 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A479BD421DE90DC00CDF180 /* Location.swift */; };
@@ -65,6 +66,7 @@
 		8A060C6E21E0CC9800AFF186 /* Vie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vie.entitlements; sourceTree = "<group>"; };
 		8A060C6F21E0E9C500AFF186 /* VieDataManager+DynamicLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VieDataManager+DynamicLinks.swift"; sourceTree = "<group>"; };
 		8A060C7121E0EB9F00AFF186 /* VenueListVC+DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VenueListVC+DeepLink.swift"; sourceTree = "<group>"; };
+		8A060C7421E14E1600AFF186 /* HomeContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContainerVC.swift; sourceTree = "<group>"; };
 		8A479B9821DE895B00CDF180 /* Vie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vie-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A479B9921DE895B00CDF180 /* FSOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
 		8A479B9A21DE895C00CDF180 /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 				082E231E7059DD6F126F3275 /* Pods-Vie.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A060C7321E14DEC00AFF186 /* Container List */ = {
+			isa = PBXGroup;
+			children = (
+				8A060C7421E14E1600AFF186 /* HomeContainerVC.swift */,
+			);
+			path = "Container List";
 			sourceTree = "<group>";
 		};
 		8A479B9721DE894000CDF180 /* FSO */ = {
@@ -348,6 +358,7 @@
 		8AF6FC5B21B9845000A1D939 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8A060C7321E14DEC00AFF186 /* Container List */,
 				8A479BF021DF66F900CDF180 /* Venue List */,
 				8A479BEF21DF668000CDF180 /* MapVC */,
 			);
@@ -552,6 +563,7 @@
 				8AF6FC1D21B95ECA00A1D939 /* AppConfigurations.swift in Sources */,
 				8A479BDE21DE90DD00CDF180 /* Venue.swift in Sources */,
 				8AF6FC8221B9880600A1D939 /* Resource+Extensions.swift in Sources */,
+				8A060C7521E14E1600AFF186 /* HomeContainerVC.swift in Sources */,
 				8A479BE821DEA59B00CDF180 /* VenueAnnotation.swift in Sources */,
 				8A479BE621DE9E6F00CDF180 /* MapVC.swift in Sources */,
 				8AF6FC2021B9658000A1D939 /* View+Extensions.swift in Sources */,
